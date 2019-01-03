@@ -19,7 +19,8 @@
 	<li>plugins-scroll</li>
 	<li>selectizeJS</li>
 </ul>
-<h2>How to use</h2>
-<p>To use this project, you can clone repository: $ git clone https://github.com/scandy5/ventelations_landing or download it in zip file.</p>
+<h2>How to start project</h2>
+ - `git clone https://github.com/scandy5/ventelations_landing`
+ - open `index.html`
 <h3>Result:</h3>
 <img src="img/_home.png" alt="home">

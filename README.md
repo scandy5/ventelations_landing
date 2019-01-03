@@ -14,4 +14,4 @@
  - npm i <br>
  - gulp 
 <h3>Result:</h3>
-<img src="img/_home.jpeg" alt="home">
+<img src="app/img/_home.jpeg" alt="home">

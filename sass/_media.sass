@@ -1,0 +1,53 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.phone
+		padding-right: 50px
+// ≥992px
++media-breakpoint-down(md)
+	.header-content
+		text-align: center
+		h1
+			font-size: 34px
+// ≥768px
++media-breakpoint-down(sm)
+	.header-content
+		h1
+			font-size: 26px
+	.mnu-line
+		text-align: center
+		.logo
+			display: inline-block
+	.phone
+		text-align: center
+		padding: 0
+		margin-top: 20px
+	.toggle-mnu
+		top: -40px
+// ≥576px
++media-breakpoint-down(xs)
+	.s-adv-item
+		text-align: center
+		margin-top: 20px
+	.s-profile
+		h2
+			font-size: 30px
+			padding-top: 15px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

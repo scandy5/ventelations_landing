@@ -1,0 +1,857 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+h1, h2, h3, h4, h5, h6
+	font-family: 'OpenSansLight', sans-serif
+	font-weight: normal
+
+h1
+	font-size: 43px
+h2 
+	font-size: 34px
+h3, h4
+	font-family: 'OpenSansSemiBold', sans-serif
+	text-transform: uppercase
+	font-size: 17px
+h4
+	font-size: 15px
+a
+	color: $accent
+	outline: none !important
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.main-head
+	background-image: url(../img/bg_top.jpg)
+	background-size: cover
+	background-position: top center
+	min-height: 100vh
+
+.mnu-line
+	padding: 30px
+
+.logo
+	display: block
+	margin: 0 auto
+	width: 100px
+	img
+		width: 100%
+
+nav
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		overflow: hidden
+		li
+			display: inline-block
+
+.main-mnu
+	text-align: center
+	font-size: 13px
+	> ul
+		> li
+			> a
+				display: block 
+				padding: 10px 18px
+				color: #7e91a4
+				transition: all .15s ease
+				&:hover
+					color: #414E5B
+		.active
+			a
+				color: #414E5B
+				text-decoration: underline
+
+.phone
+	text-align: right
+	.phone-wrap
+		color: #414e5b
+		font-family: 'Exo2Bold', sans-serif
+		font-size: 20px
+	.callback
+		font-family: 'OpenSansSemiBold'
+		font-size: 13px
+		color: #7e91a4
+		border-bottom: 1px dashed #7e91a4
+		@extend .mt
+		&:hover
+			text-decoration: none
+			border-bottom: transparent
+.header-content
+	padding: 8% 0 5% 0
+	h1
+		line-height: 49px
+		font-size: 41px
+	ul
+		list-style-type: none
+		padding: 41px 0
+		font-size: 17px
+		font-family: 'OpenSansSemiBold', sans-serif
+		text-transform: uppercase
+		line-height: 30px
+		color: #414e5b
+.mw-wrapper
+	text-align: center
+	padding: 20px 0
+
+.s-wide
+	padding: 80px 0
+
+.s-dark
+	background-color: $blue
+	color: #fff
+
+.s-adv
+	padding: 55px 0 50px
+.s-adv-item
+	font-family: 'OpenSansLight', sans-serif
+	font-size: 16px
+	color: #c0cdda
+	line-height: 21px
+	h3
+		font-family: 'Exo2Bold', sans-serif
+		font-size: 20px
+		color: #dde9f3
+		margin-bottom: 13px
+		span
+			color: $accent
+			font-size: 34px
+
+.s-gray
+	background-color: #f8f8f8	
+
+.gallery-tizer-wrap
+	min-height: 360px
+	border: 7px solid $accent
+	background-size: cover
+	position: relative
+	display: block
+	&:hover
+		text-decoration: none
+		&::before
+			opacity: .8
+			@extend .mt 
+	&::before
+		content: ''
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0	
+		background-color: #414e5b
+		opacity: .6
+	.table
+		z-index: 2
+		position: relative
+		text-align: center
+		height: 360px
+		span
+			font-size: 26px
+			color: #fff
+			line-height: 40px
+			font-family: 'OpenSansLight', sans-serif
+			i 
+				color: #b5bdc6
+				font-size: 56px
+
+.table
+	display: table
+	width: 100%
+	.tr
+		display: table-row
+	.td
+		display: table-cell
+		vertical-align: middle
+.tizer-triangle
+	position: absolute
+	top: 0 
+	right: 0
+	i
+		position: absolute
+		top: 6px
+		right: 6px
+
+.s-profile
+	h2
+		line-height: 40px
+	p 
+		padding: 28px 0 0
+		margin: 0
+		font-size: 14px
+	ul
+		list-style-type: none
+		padding: 41px 0 40px
+		margin: 0
+		font-size: 17px
+		font-family: 'OpenSansSemiBold', sans-serif
+		text-transform: uppercase
+		line-height: 30px
+		color: #414e5b
+		i
+			color: #b1b8be
+	.button
+		margin-bottom: 20px
+		
+.s-direct
+	h2
+		text-align: center
+.s-direct-item
+	height: 100%
+	h4
+		font-family: 'OpenSansBold', sans-serif
+		margin: 0 0 30px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 30px
+			left: 50%
+			margin-left: -5%
+			height: 1px
+			width: 10%
+			background-color: #E0E0E0
+			@extend .mt
+	&:hover
+		h4
+			&::before 
+				margin-left: -15%
+				height: 1px
+				width: 30%
+				background-color: $accent
+	p 
+		padding-bottom: 41px
+		font-size: 14px
+		line-height: 20px
+	svg, img
+		width: 74px
+		height: auto
+		padding: 0 0 40px
+	path
+		fill: #555 !important
+		@extend .mt
+	&:hover
+		path
+			fill: $accent !important
+		
+
+	text-align: center
+	padding: 80px 0 0
+
+.s-works
+	padding-bottom: 0
+	border-bottom: 20px solid #35414E
+	h2
+		text-align: center
+
+.portfolio
+	margin-top: 64px
+	.col-lg-3
+		padding: 0
+	.portfolio-item
+		position: relative
+		display: block
+		overflow: hidden
+		transition: all .5s ease
+		img
+			transition: all .5s ease
+		&:hover
+			.portfolio-item-content
+				opacity: 1
+				transform: scale(1)
+				transition: all .5s ease
+			img
+				transform: scale(1.2)
+		&-content 
+			transform: scale(1.5)
+			position: absolute
+			top: 0 
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(255,255,255,.85)
+			text-align: center
+			padding-top: 27%
+			opacity: 0
+			i 
+				color: rgba(65,78,91,.6)
+				font-size: 24px
+			h2
+				font-family: 'OpenSansBold'
+				font-size: 15px
+				color: $blue
+				text-transform: uppercase
+
+.portfolio-popup
+	position: relative
+	background-color: #fff
+	display: block
+	max-width: 900px
+	margin: 5% auto
+	padding: 2% 0
+	text-align: center
+	img
+		margin: 0 auto
+		padding-top: 15px
+
+.home-gallery-wrap > a
+	display: none
+	&:first-child
+		display: block
+
+.s-brands
+	padding: 60px 0
+	h2
+		margin-bottom: 60px
+
+.carousel-brands
+	padding: 0 80px
+	position: relative
+	.owl-controls
+		left: 0
+		top: 0
+		width: 100%
+		position: absolute
+		.owl-nav
+			position: absolute
+			width: 100%
+			top: 0
+			> div
+				position: absolute
+				left: 25px
+				font-size: 34px
+				line-height: 38px
+				color: #9c9c9c
+				transition: all .5s ease
+				&:hover
+					color: $accent
+				&.owl-next
+					right: 25px
+					left: auto
+	.carousl-brand
+		transition: all .5s ease
+		opacity: .5
+		&:hover
+			opacity: .9
+		a, span
+			display: block
+			text-align: center
+			img
+				max-width: 70%
+				max-height: 40px
+				display: inline-block
+
+
+		h4
+			font-size: em(19px)
+			text-transform: none
+			margin-top: 0
+			margin-bottom: 16px
+		p
+			color: #b5babf
+			transition: all .5s ease
+			margin-bottom: 0
+
+.s-lowprice
+	text-align: center
+	h2
+		padding-bottom: 40px
+	p 
+		font-size: 19px
+		padding-bottom: 30px
+.s-callback
+	text-align: center
+
+.rounded-img-wrap
+	border-radius: 10em
+	border: #d7d7d7 5px solid
+	overflow: hidden
+	width: 136px
+	height: 136px
+	text-align: center
+	margin: 0 auto 45px
+	transition: all .5s ease
+	img
+		max-width: 100%
+.callback-item
+	padding-top: 70px
+	h4
+		font-size: 17px
+		padding-bottom: 10px
+	p 
+		color: #666
+		font-size: 13px
+		margin-bottom: 25px
+	.phone-wrap
+		color: #999
+		font-family: 'Exo2Bold', sans-serif
+		font-size: 17px
+	&:hover
+		.phone-wrap
+			color: $accent
+		.rounded-img-wrap
+			border: $accent 5px solid
+			transform: scale(1.15)
+
+.s-contacts
+	h2
+		text-align: center
+		padding-bottom: 60px
+	p 
+		font-size: 18px
+		font-family: 'OpenSansLight', sans-serif
+
+.contact-form
+	padding: 32px 26px
+	background-color: darken($blue, 5%)
+	&-head
+		text-align: center
+		h4
+			font-size: 18px
+			margin-top: 0
+			margin-bottom: 10px
+		p 
+			color: #fff
+			opacity: .6
+			font-size: 14px
+			margin-top: 0
+
+form
+	label
+		width: 100%
+		display: block
+		margin-bottom: 10px
+		span
+			font-size: 14px
+			color: #fff 	
+			opacity: .4
+		input, select, .selectize-input, .selectize-input.full
+			margin-top: 5px
+			background-color: rgba(255,255,255,.6)
+			border-radius: 2px
+			border: none
+			padding: 9px 15px
+			display: block
+			width: 100%
+			color: #222
+			border-bottom: transparent 4px solid
+			transition: all .5s ease
+			&:focus
+			 	border-bottom: lighten($blue, 10%) 4px solid	
+			 	background-color: #fff
+	button 
+		margin-top: 25px
+
+.s-brands
+	text-align: center
+.owl-carousel
+	padding: 0 80px
+	position: relative
+	cursor: e-resize
+	.owl-controls
+		left: 0
+		top: 0
+		width: 100%
+		position: absolute
+		.owl-nav
+			position: absolute
+			width: 100%
+			top: 0
+			> div
+				position: absolute
+				left: 25px
+				font-size: 34px
+				line-height: 38px
+				color: #9c9c9c
+				transition: all .5s ease
+				&:hover
+					color: $accent
+				&.owl-next
+					right: 25px
+					left: auto
+	.carousl-brand
+		transition: all .5s ease
+		opacity: .5
+		&:hover
+			opacity: .9
+		a, span
+			display: block
+			text-align: center
+			img
+				max-width: 70%
+				max-height: 40px
+				display: inline-block
+
+
+footer
+	background-color: darken($blue, 7%)
+	margin: 0
+	color: #fff
+	padding: 30px
+	.main-mnu>ul>li>a:hover
+		color: darken(#fff, 30%)
+	.main-mnu>ul .active a
+		color: #fff
+	.phone .phone-wrap
+		color: #acb6be
+
+
+
+
+.form-callback
+	max-width: 320px
+	margin: auto
+	box-shadow: rgba(0,0,0,.2) 0 0 10px
+	overflow: hidden
+
+.contact-form-head
+	h4
+		color: #fff
+
+.success
+	color: #fff
+	background-color: $blue 
+	position: absolute
+	z-index: 1
+	left: 0
+	top: -100%
+	width: 100%
+	height: 100%
+	opacity: 0
+	display: flex
+	p
+		margin: auto
+		display: flex
+	&.active
+		top: 0
+		opacity: 1
+
+.mfp-close-btn-in .mfp-close
+	margin: 0
+	padding: 0
+	color: rgba(255,255,255,.8)
+
+.topScroll
+	position: fixed
+	bottom: 20px
+	right: -120px
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	cursor: pointer
+	background-color: #fff
+	text-align: center
+	opacity: .4
+	color: $blue
+	transition: all .25s ease
+	i 
+		font-size: 32px
+		margin-top: 7px
+	&:hover
+		opacity: 1
+		background-color: $accent
+	&.active
+		right: 10px
+
+//
+.top 
+	display: none
+//iframe 
+// iframe
+// 	width: 100% 
+// 	height: 392px
+// 	border: none 
+
+
+//Magnific-Popup Customize
+.mfp-ready .mfp-figure
+	opacity: 0
+.mfp-zoom-in
+	.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+		opacity: 0
+		transition: all 0.3s ease-out
+		transform: scale(0.95)
+	&.mfp-bg, .mfp-preloader
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-image-loaded .mfp-figure
+		opacity: 1
+		transform: scale(1)
+	&.mfp-ready
+		.mfp-iframe-holder .mfp-iframe-scaler
+			opacity: 1
+			transform: scale(1)
+		&.mfp-bg, .mfp-preloader
+			opacity: 0.8
+	&.mfp-removing
+		.mfp-figure, .mfp-iframe-holder .mfp-iframe-scaler
+			transform: scale(0.95)
+			opacity: 0
+		&.mfp-bg, .mfp-preloader
+			opacity: 0
+
+.mfp-iframe-scaler
+	overflow: visible
+.mfp-zoom-out-cur
+	cursor: auto
+	.mfp-image-holder .mfp-close
+		cursor: pointer
+.mfp-preloader
+	width: 30px!important
+	height: 30px!important
+	background-color: $accent
+	opacity: 1
+	margin: 0 auto
+	animation: rotateplane 1.2s infinite ease-in-out
+@-webkit-keyframes rotateplane
+	0%
+		-webkit-transform: perspective(120px)
+	50%
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	100%
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+@keyframes rotateplane
+	0%
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	50%
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	100%
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+	
+
+//zoom
+.my-mfp-zoom-in
+	.portfolio-popup,
+	.form-callback
+		opacity: 0
+		transition: all 0.3s ease-in-out
+		transform: scale(0.8)
+	&.mfp-ready .portfolio-popup,
+	&.mfp-ready .form-callback
+		opacity: 1
+		transform: scale(1)
+	&.mfp-removing .portfolio-popup,
+	&.mfp-removing .form-callback
+		transform: scale(0.8)
+		opacity: 0
+	&.mfp-bg
+		opacity: 0
+		transition: opacity 0.3s ease-out
+	&.mfp-ready.mfp-bg
+		opacity: 0.8
+	&.mfp-removing.mfp-bg
+		opacity: 0
+
+
+	
+
+
+
+
+
+
+
+//toggle menu
+.hidden-mnu
+	background-color: $blue
+	display: none
+	li
+		display: block
+	> ul
+		padding: 20px 0
+		> li
+			&.active
+				a
+					color: $accent
+			> a
+				&:hover
+					color: #fff
+					background-color: $accent
+					text-decoration: none
+
+.toggle-mnu 
+	display: block
+	width: 28px
+	height: 28px
+	margin-top: 14px
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: $blue
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu
+	position: absolute
+	top: 0 
+	right: 0
+
+//mouse-icon
+.mouse-icon
+	border: 2px solid $blue
+	border-radius: 16px
+	height: 40px
+	width: 24px
+	display: inline-block
+	z-index: 10
+	opacity: 0.5
+	cursor: pointer
+	.wheel
+		animation-name: drop
+		animation-duration: 1s
+		animation-timing-function: linear
+		animation-delay: 0s
+		animation-iteration-count: infinite
+		animation-play-state: running
+		position: relative
+		border-radius: 10px
+		background: $blue
+		width: 2px
+		height: 6px
+		top: 4px
+		margin-left: auto
+		margin-right: auto
+
+@-webkit-keyframes drop
+	0%
+		top: 5px
+		opacity: 0
+
+	30%
+		top: 10px
+		opacity: 1
+
+	100%
+		top: 25px
+		opacity: 0
+
+
+@keyframes drop
+	0%
+		top: 5px
+		opacity: 0
+
+	30%
+		top: 10px
+		opacity: 1
+
+	100%
+		top: 25px
+		opacity: 0
+
+//button
+.button
+	display: inline-block
+	border: none
+	background-color: $btn
+	color: #fff
+	font-size: 14px
+	letter-spacing: 2px
+	text-transform: uppercase
+	padding: 13px 34px
+	border-radius: 3px
+	box-shadow: 0 4px 0 #0E9C4B
+	transition: all .25s ease
+	&:hover, &:focus
+		color: #fff
+		text-decoration: none
+	&:hover
+		background-color: #18CB65
+	&:active
+		background-color: #0E9C4B
+.button-accent
+	background-color: #fff
+	color: $accent
+	border: 2px solid $accent
+	padding: 11px 34px
+	box-shadow: 0 4px 0 darken($accent, 5%)
+	&:hover
+		color: #fff
+	&:active
+		background-color: darken($accent, 5%)
+	&:hover
+		background-color: lighten($accent, 5%)
+.button-small
+	padding: 9px 34px
+	font-size: 13px
+	background-color: #e8e8e8
+	box-shadow: 0 4px 0 darken(#e8e8e8, 5%)
+	color: #333
+	&:active, &:focus
+		color: #fff
+		background-color: darken($accent, 5%)
+		box-shadow: 0 4px 0 darken($accent, 5%)
+	&:hover
+		color: #fff
+		background-color: lighten($accent, 5%)
+		box-shadow: 0 4px 0 darken($accent, 5%)
+	
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end

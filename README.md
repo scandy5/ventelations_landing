@@ -5,19 +5,8 @@
 <ul>
 	<li>HTML</li>
 	<li>SASS -> CSS</li>
-	<li>JS</li>
-</ul>
-<h3>Libs in the project:</h3>
-<ul>
+	<li>JS/JQuery</li>
 	<li>Bootstrap 4</li>
-	<li>equalHeights</li>
-	<li>html5shiv</li>
-	<li>Jquery</li>
-	<li>Magnific-Popup</li>
-	<li>modernizr</li>
-	<li>owl-corousel</li>
-	<li>plugins-scroll</li>
-	<li>selectizeJS</li>
 </ul>
 <h2>How to start project</h2>
  - git clone https://github.com/scandy5/ventelations_landing

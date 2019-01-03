@@ -20,7 +20,7 @@
 	<li>selectizeJS</li>
 </ul>
 <h2>How to start project</h2>
- - `git clone https://github.com/scandy5/ventelations_landing`
- - open `index.html`
+ - git clone https://github.com/scandy5/ventelations_landing
+ - open index.html
 <h3>Result:</h3>
-<img src="img/_home.png" alt="home">
+<img src="img/_home.jpeg" alt="home">
